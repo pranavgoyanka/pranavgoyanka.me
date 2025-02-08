@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
+import TypingText from "./TypingText";
 
 const Navbar = () => {
 
@@ -23,7 +24,12 @@ const Navbar = () => {
     <div className="lowercase text-center mt-4">
       <div className="flex flex-col md:flex-row">
         <div className="flex-1">
-          <h1 className="text-4xl font-bold">Pranav Goyanka</h1>
+          {/* <h1 className="text-4xl font-bold">Pranav Goyanka</h1> */}
+          <TypingText
+        textArray={["Pranav Goyanka", "प्रणव गोयनका"]}
+        typingSpeed={70}
+        pauseTime={2000}
+      />
           <span>Software Developer</span> <br />
           <span>M.S. in Computer Science</span> <br />
           <span>bedroom musician</span>
