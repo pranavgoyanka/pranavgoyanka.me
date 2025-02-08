@@ -57,13 +57,7 @@ const Navbar = () => {
       <a href="Pranav_Goyanka_Resume.pdf" className="mx-2">
         resume 
       </a>
-      {/* <button
-          className="mt-4 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded"
-          onClick={() => setDarkMode(!darkMode)}
-        >
-          Toggle {darkMode ? 'Light' : 'Dark'} Mode
-        </button> */}
-      {/* |<span onClick={toggleTheme} id="svg-span" className="mx-2"> 🌘 </span> */}
+      |<span onClick={() => setDarkMode(!darkMode)} id="svg-span" className="mx-2 hover:cursor-pointer"> 🌘 </span>
       <hr className="m-2"/>
     </div>
   );
