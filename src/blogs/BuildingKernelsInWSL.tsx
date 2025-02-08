@@ -117,8 +117,10 @@ const BuildingKernelsInWSL = () => {
         <li>Just download the zip and unzip it.</li>
         <li>
           Copy your from Image.gz-dtb file (from
-          <code>/out/arch/arm64/boot/Image.gz-dtb</code>) to the extracted
-          folder.
+          <pre className="whitespace-pre overflow-auto">
+            <code>/out/arch/arm64/boot/Image.gz-dtb</code>
+          </pre>
+          ) to the extracted folder.
         </li>
         <li>
           Edit you the flash script to mention your device&#39;s name and
@@ -126,7 +128,9 @@ const BuildingKernelsInWSL = () => {
           flashing
         </li>
         <li>
-          <code>zip -r9 AnyKernel3.zip * -x .git</code>
+          <pre className="whitespace-pre overflow-auto">
+            <code>zip -r9 AnyKernel3.zip * -x .git</code>
+          </pre>
         </li>
         <li>Flash away!</li>
       </ol>
@@ -142,10 +146,12 @@ const BuildingKernelsInWSL = () => {
         the offscreen gestures weren&#39;t working. After spending a lot of time
         on trying to understand what was wrong, I finally found out that the
         file
-        <code>drivers/input/touchscreen/synaptics_driver_s3320.c</code> had all
-        the gesture definitions. These were slightly different from the ones in
-        OxygenOS sources. So I just copied those from OxygenOS to AOSPA and
-        after a quick rebuild, I had working off screen gestures.
+        <pre className="whitespace-pre overflow-auto">
+          <code>drivers/input/touchscreen/synaptics_driver_s3320.c</code>
+        </pre>
+        had all the gesture definitions. These were slightly different from the
+        ones in OxygenOS sources. So I just copied those from OxygenOS to AOSPA
+        and after a quick rebuild, I had working off screen gestures.
       </p>
       <p>
         If time permits, I&#39;ll try understanding a little more about how to
