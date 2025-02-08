@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -50,9 +51,10 @@ const Navbar = () => {
         </div>
       </div>
       <hr className="m-2" />
-      <a href="./index.html" className="mx-2">
+      {/* <a href="./index.html" className="mx-2">
         home 
-      </a>
+      </a> */}
+      <Link to="/" className="mx-2">Home</Link>
       |
       <a href="Pranav_Goyanka_Resume.pdf" className="mx-2">
         resume 

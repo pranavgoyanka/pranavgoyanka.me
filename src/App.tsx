@@ -1,21 +1,24 @@
-import Navbar from "./Components/Navbar";
-import BlogList from "./Components/BlogList";
-import About from "./Components/About";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 import "./App.css";
+import NotFound from './pages/NotFound';
+import BlogPage from './blogs/BlogPage';
 
 function App() {
 
   return (
-    <div className="bg-stone-50 dark:bg-stone-950 text-black dark:text-stone-50
-    flex justify-center min-h-screen border-t-[5px] border-black text-lg font-sans">
-      
+    <div className="flex justify-center min-h-screen text-lg font-sans">
       <div className="mx-3 max-w-[800px] max-h-full w-full">
-        <Navbar />
-        <About />
-        <BlogList />
-
-      </div>
-    </div>
+    <Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<NotFound />} />
+      <Route path="/blogs/:blogUrl" element={<BlogPage />} />
+    </Routes>
+  </Router>
+  </div>
+  </div>
+    
   );
 }
 
