@@ -57,7 +57,7 @@ const Navbar = () => {
         </div>
       </div>
       <hr className="m-2" />
-      <span className="font-stretch-extra-condensed">
+      <span className="">
 
       {/* <a href="./index.html" className="mx-2">
         home 

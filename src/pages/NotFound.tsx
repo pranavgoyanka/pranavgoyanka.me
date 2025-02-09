@@ -6,7 +6,7 @@ const NotFound = () => {
     flex justify-center min-h-screen border-t-[5px] border-black text-lg font-sans">
       <div className="mx-3 max-w-[800px] max-h-full w-full">
         <Navbar />
-        <h1>Whoops!</h1>
+        <h1>404 - Not Found</h1>
       </div>
     </div>
   )

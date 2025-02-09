@@ -3,6 +3,15 @@ import Home from './pages/Home';
 import "./App.css";
 import NotFound from './pages/NotFound';
 import BlogPage from './blogs/BlogPage';
+import { useEffect } from 'react';
+
+function DownloadRedirect() {
+  useEffect(() => {
+    window.location.href = "/Pranav_Goyanka_Resume.pdf";
+  }, []);
+
+  return <p>Redirecting to resume...</p>;
+}
 
 function App() {
 
@@ -12,7 +21,8 @@ function App() {
     <Router>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="/*" element={<NotFound />} />
+      <Route path="/resume"  element={<DownloadRedirect />} />
       <Route path="/blogs/:blogUrl" element={<BlogPage />} />
     </Routes>
   </Router>
