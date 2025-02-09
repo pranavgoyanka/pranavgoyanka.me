@@ -7,10 +7,12 @@ const Education = () => {
     <ul className="ml-4 mt-2">
       {AllEducationData.map((education) => (
         <li className="mb-2 list-disc">
-          <span className="font-semibold">
+          <span className="font-medium">
           {education.school}
           </span>
-          <span className="italic font-thin"> - {education.end_date}</span>
+          <span className="font-thin"> - {education.end_date}</span>
+          <br />
+          <span className="font-semibold">{education.degree}</span>
           <br />
           <span className=" ">GPA: {education.gpa}</span>
           <br />
