@@ -5,7 +5,7 @@ import NotFound from './pages/NotFound';
 import BlogPage from './blogs/BlogPage';
 import { useEffect } from 'react';
 
-function DownloadRedirect() {
+function ResumeRedirect() {
   useEffect(() => {
     window.location.href = "/Pranav_Goyanka_Resume.pdf";
   }, []);
@@ -22,7 +22,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/*" element={<NotFound />} />
-      <Route path="/resume"  element={<DownloadRedirect />} />
+      <Route path="/resume"  element={<ResumeRedirect />} />
       <Route path="/blogs/:blogUrl" element={<BlogPage />} />
     </Routes>
   </Router>
