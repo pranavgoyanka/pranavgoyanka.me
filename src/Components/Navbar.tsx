@@ -57,15 +57,31 @@ const Navbar = () => {
         </div>
       </div>
       <hr className="m-2" />
+      <span className="font-stretch-extra-condensed">
+
       {/* <a href="./index.html" className="mx-2">
         home 
-      </a> */}
+        </a> */}
       <Link to="/" className="mx-2">Home</Link>
       |
       <a href="Pranav_Goyanka_Resume.pdf" className="mx-2">
         resume 
       </a>
-      |<span onClick={() => setDarkMode(!darkMode)} id="svg-span" className="mx-2 hover:cursor-pointer"> 🌘 </span>
+      |
+      {/* <a href="#education" className="mx-2">
+        education 
+      </a>
+      |
+      <a href="#projects" className="mx-2">
+        projects 
+      </a>
+      |
+      <a href="#blogs" className="mx-2">
+        blog 
+      </a>
+      | */}
+      <span onClick={() => setDarkMode(!darkMode)} id="svg-span" className="mx-2 hover:cursor-pointer"> 🌘 </span>
+      </span>
       <hr className="m-2"/>
     </div>
   );
