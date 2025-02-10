@@ -15,6 +15,14 @@ export const AllProjecs : AllProjectsInterface[]= [
     description: "Built a movie browsing web app with debouncing support that features trending movies based on most searched titles.",
   },
   {
+    title: "Open Poker",
+    // date: "October 22, 2020",
+    url: "https://openpoker.vercel.app/",
+    tags: "TypeScript, NodeJS, ReactJS, Tailwind CSS",
+    description:
+      "Open Poker is a high-stakes (read silly) and speedy variant of traditional poker where all cards are dealt face-up, eliminating the element of hidden information. Once the deal is complete, the player with the best hand wins immediately.",
+  },
+  {
     title: "Automated Trading System",
     url: "https://github.com/pranavgoyanka/cs542-common-task",
     tags: "LSTM, TensorFlow",

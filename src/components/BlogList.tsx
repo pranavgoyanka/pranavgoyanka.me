@@ -9,7 +9,7 @@ const BlogList = () => {
         {AllBlogs.map((blogEntry) => (
           <li className="mb-2 list-disc">
             <Link
-              to={'blogs/' + blogEntry.url}
+              to={'/blogs/' + blogEntry.url}
               className="underline font-semibold"
             >
               {blogEntry.title}

@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/HomePage';
 import "./App.css";
 import NotFound from './pages/NotFound';
 import BlogPage from './blogs/BlogPage';
 import { useEffect } from 'react';
+import AboutPage from './pages/AboutPage';
 
 function ResumeRedirect() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
     <Router>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/about" element={<AboutPage />} />
       <Route path="/*" element={<NotFound />} />
       <Route path="/resume"  element={<ResumeRedirect />} />
       <Route path="/blogs/:blogUrl" element={<BlogPage />} />

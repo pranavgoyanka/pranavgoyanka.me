@@ -4,6 +4,7 @@ import BuildingKernelsInWSL from "./BuildingKernelsInWSL";
 import BlogsAndStuff from "./BlogsAndStuff";
 import NotFound from "../pages/NotFound";
 import "./BlogPage.css";
+import { useEffect } from "react";
 
 const blogComponents: any = {
   BuildingKernelsInWSL: BuildingKernelsInWSL,
@@ -12,6 +13,10 @@ const blogComponents: any = {
 
 const BlogPage = () => {
   const { blogUrl } = useParams();
+
+  useEffect(() => {
+      window.scrollTo({top:0, behavior: "instant"})
+    }, [location]);
 
   if (!blogUrl) {
     return <NotFound />;

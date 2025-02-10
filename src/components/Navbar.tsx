@@ -4,6 +4,8 @@ import TypingText from "./TypingText";
 
 const Navbar = () => {
 
+  const [darkModeButton, setdarkModeButton] = useState("🌘")
+
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem('theme') === 'dark'
   );
@@ -12,9 +14,11 @@ const Navbar = () => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
+      setdarkModeButton("🌔")
     } else {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
+      setdarkModeButton("🌘")
     }
   }, [darkMode]);
 
@@ -64,6 +68,8 @@ const Navbar = () => {
         </a> */}
       <Link to="/" className="mx-2">Home</Link>
       |
+      <Link to="/about" className="mx-2">About</Link>
+      |
       <a href="Pranav_Goyanka_Resume.pdf" className="mx-2">
         resume 
       </a>
@@ -80,7 +86,7 @@ const Navbar = () => {
         blog 
       </a>
       | */}
-      <span onClick={() => setDarkMode(!darkMode)} id="svg-span" className="mx-2 hover:cursor-pointer"> 🌘 </span>
+      <span onClick={() => setDarkMode(!darkMode)} id="svg-span" className="mx-2 hover:cursor-pointer"> {darkModeButton} </span>
       </span>
       <hr className="m-2"/>
     </div>
