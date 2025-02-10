@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 interface TypingTextProps {
   textArray: string[]; // Array of strings to type and untype
   typingSpeed?: number; // Speed of typing in milliseconds (default 100ms per character)
   pauseTime?: number; // Pause time between switching strings (default 1000ms)
+  url?: string;
 }
 
 const TypingText: React.FC<TypingTextProps> = ({
   textArray,
   typingSpeed = 100,
   pauseTime = 1000,
+  url = ""
 }) => {
   const [displayedText, setDisplayedText] = useState<string>('');
   const [index, setIndex] = useState<number>(0); // Current index in the textArray
@@ -48,7 +51,12 @@ const TypingText: React.FC<TypingTextProps> = ({
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, index, textArray, typingSpeed, pauseTime]);
 
-  return <h1>{displayedText.length > 0 ? displayedText : "|"}</h1>;
+  if (url.length > 0 ) {
+    return <Link to={url}> <h1>{displayedText.length > 0 ? displayedText : "|"}</h1> </Link>;
+  } else {
+    return <h1>{displayedText.length > 0 ? displayedText : "|"}</h1>;
+  }
+
 };
 
 export default TypingText;
