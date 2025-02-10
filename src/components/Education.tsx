@@ -12,7 +12,7 @@ const Education = () => {
           </span>
           <span className="font-thin"> • {education.end_date}</span>
           <br />
-          <span className="font-semibold">{education.degree}</span>
+          <span className="font-semibold italic">{education.degree}</span>
           <br />
           <span className=" ">GPA: {education.gpa}</span>
           <br />
