@@ -5,6 +5,7 @@ import BlogsAndStuff from "./BlogsAndStuff";
 import NotFound from "../pages/NotFound";
 import "./BlogPage.css";
 import { useEffect } from "react";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 const blogComponents: any = {
   BuildingKernelsInWSL: BuildingKernelsInWSL,
@@ -33,6 +34,7 @@ const BlogPage = () => {
         ) : (
           <BlogComponent />
         )}
+        <ScrollToTopButton />
       </div>
     </div>
   );

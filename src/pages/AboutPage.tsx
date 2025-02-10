@@ -5,6 +5,7 @@ import Education from '../components/Education'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
 import Experience from '../components/Experience'
+import ScrollToTopButton from '../components/ScrollToTopButton'
 
 const AboutPage = () => {
 
@@ -26,6 +27,7 @@ const AboutPage = () => {
         <Experience />
         <Projects />
         <BlogList />
+        <ScrollToTopButton />
     </>
   )
 }
