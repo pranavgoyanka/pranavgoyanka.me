@@ -12,7 +12,7 @@ export const AllExperienceData: AllExperienceDataInterface[] = [
       "Simplified payment and game data storage and access across the organization, by developing centralized Java services and a Kafka-powered data pipeline.",
       "Played a key role in the successful Go-To-Market execution by contributing to the Distributed Systems team and leading backend development for a new application.",
     ],
-    url: "mpl.live",
+    url: "https://mpl.live",
   },
   {
     company: "Amadeus Software Labs",
