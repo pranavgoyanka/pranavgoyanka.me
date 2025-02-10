@@ -1,4 +1,3 @@
-import { AllEducationData } from "../data/AllEducationData"
 import { AllExperienceData } from "../data/AllExperience"
 
 const Experience = () => {
