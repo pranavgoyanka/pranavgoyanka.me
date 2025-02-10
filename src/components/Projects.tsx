@@ -6,7 +6,7 @@ const Projects = () => {
       <h1 className="text-3xl font-bold text-center mt-4 section-title">Projects</h1>
       <ul className="ml-4 mt-2">
         {AllProjecs.map((project) => (
-          <li className="mb-2 list-disc">
+          <li className="mb-2 list-disc text-justify">
             {project.url.length > 0 ? (
               <a href={project.url} className="underline font-semibold">
                 {project.title}
@@ -15,9 +15,9 @@ const Projects = () => {
               <span className="font-semibold">{project.title}</span>
             )}
 
-            <span className="italic font-thin ">
+            <span className="font-thin ">
               {" "}
-              {project.tags.length > 0 ? " - " + project.tags : ""}
+              {project.tags.length > 0 ? " • " + project.tags : ""}
             </span>
             <br />
             <span className="font-light"> {project.description}</span>

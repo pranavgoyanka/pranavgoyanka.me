@@ -6,11 +6,11 @@ const Education = () => {
     <h1 className="text-3xl font-bold text-center mt-4 section-title">Education</h1>
     <ul className="ml-4 mt-2">
       {AllEducationData.map((education) => (
-        <li className="mb-2 list-disc">
+        <li className="mb-2 list-disc text-justify">
           <span className="font-medium">
           {education.school}
           </span>
-          <span className="font-thin"> - {education.end_date}</span>
+          <span className="font-thin"> • {education.end_date}</span>
           <br />
           <span className="font-semibold">{education.degree}</span>
           <br />

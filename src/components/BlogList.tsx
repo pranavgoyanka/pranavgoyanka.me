@@ -7,7 +7,7 @@ const BlogList = () => {
       <h1 className="text-3xl font-bold text-center mt-4 section-title">Blog Posts</h1>
       <ul className="ml-4 mt-2">
         {AllBlogs.map((blogEntry) => (
-          <li className="mb-2 list-disc">
+          <li className="mb-2 list-disc text-justify">
             <Link
               to={'/blogs/' + blogEntry.url}
               className="underline font-semibold"

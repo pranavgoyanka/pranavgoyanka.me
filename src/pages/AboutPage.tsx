@@ -4,6 +4,7 @@ import BlogList from '../components/BlogList'
 import Education from '../components/Education'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
+import Experience from '../components/Experience'
 
 const AboutPage = () => {
 
@@ -22,6 +23,7 @@ const AboutPage = () => {
         <Navbar />
         <AboutContent />
         <Education />
+        <Experience />
         <Projects />
         <BlogList />
     </>
