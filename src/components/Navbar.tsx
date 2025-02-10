@@ -67,11 +67,11 @@ const Navbar = () => {
       {/* <a href="./index.html" className="mx-2">
         home 
         </a> */}
-      <Link to="/" className="mx-2">Home</Link>
+      <Link to="/" className="mx-2 hover:underline">Home</Link>
       |
-      <Link to="/about" className="mx-2">About</Link>
+      <Link to="/about" className="mx-2 hover:underline">About</Link>
       |
-      <a href="Pranav_Goyanka_Resume.pdf" className="mx-2">
+      <a href="Pranav_Goyanka_Resume.pdf" className="mx-2 hover:underline">
         resume 
       </a>
       |
@@ -87,7 +87,7 @@ const Navbar = () => {
         blog 
       </a>
       | */}
-      <span onClick={() => setDarkMode(!darkMode)} id="svg-span" className="mx-2 hover:cursor-pointer"> {darkModeButton} </span>
+      <span onClick={() => setDarkMode(!darkMode)} id="svg-span" className="mx-2 hover:cursor-pointer "> {darkModeButton} </span>
       </span>
       <hr className="m-2"/>
     </div>
