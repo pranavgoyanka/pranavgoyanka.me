@@ -5,6 +5,7 @@ import NotFound from './pages/NotFound';
 import BlogPage from './blogs/BlogPage';
 import { useEffect } from 'react';
 import AboutPage from './pages/AboutPage';
+import { Analytics } from "@vercel/analytics/react"
 
 function ResumeRedirect() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
       <Route path="/blogs/:blogUrl" element={<BlogPage />} />
     </Routes>
   </Router>
+  <Analytics/>
   </div>
   </div>
     
