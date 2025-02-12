@@ -7,9 +7,13 @@ const Education = () => {
     <ul className="ml-4 mt-2">
       {AllEducationData.map((education) => (
         <li className="mb-2 list-disc text-justify">
-          <span className="font-medium">
-          {education.school}
-          </span>
+          {education.url.length > 0 ? (
+              <a href={education.url} className="underline font-semibold">
+                {education.school}
+              </a>
+            ) : (
+              <span className="font-semibold">{education.school}</span>
+            )}
           <span className="font-thin"> • {education.end_date}</span>
           <br />
           <span className="font-semibold italic">{education.degree}</span>

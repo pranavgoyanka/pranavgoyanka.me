@@ -6,6 +6,7 @@ export const AllEducationData : AllEducationDataInterface[] = [
     end_date: "Jan 2025",
     gpa: "3.71/4.00",
     description: "Teaching Assistant: Gradaute Distrbuted Systems",
+    url: "https://www.bu.edu/"
   },
   {
     school: "Thapar Institute of Engineering and Technology, India",
@@ -14,6 +15,7 @@ export const AllEducationData : AllEducationDataInterface[] = [
     end_date: "Jul 2021",
     gpa: "8.84/10.00",
     description: "",
+    url: "https://thapar.edu/"
   },
   
 ];
@@ -25,4 +27,5 @@ interface AllEducationDataInterface {
   end_date: string,
   gpa: string,
   description: string,
+  url: string,
 }
