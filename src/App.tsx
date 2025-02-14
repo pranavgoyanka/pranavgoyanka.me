@@ -24,7 +24,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
-      <Route path="/home/:src" element={<Home />} />
+      <Route path="/home/r" element={<Home />} />
+      <Route path="/home/wd" element={<Home />} />
+      <Route path="/home/l" element={<Home />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/*" element={<NotFound />} />
       <Route path="/resume"  element={<ResumeRedirect />} />
