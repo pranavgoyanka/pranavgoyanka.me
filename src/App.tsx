@@ -23,6 +23,8 @@ function App() {
     <Router>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/home/:src" element={<Home />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/*" element={<NotFound />} />
       <Route path="/resume"  element={<ResumeRedirect />} />
