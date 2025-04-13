@@ -30,8 +30,8 @@ const Navbar = () => {
         <div className="flex-1">
           {/* <h1 className="text-4xl font-bold">Pranav Goyanka</h1> */}
           <TypingText
-            // textArray={["Pranav Goyanka", "प्रणव गोयनका"]}
-            textArray={["Pranav Goyanka"]}
+            textArray={["Pranav Goyanka", "प्रणव गोयनका"]}
+            // textArray={["Pranav Goyanka"]}
             typingSpeed={70}
             pauseTime={2000}
             url="/"
