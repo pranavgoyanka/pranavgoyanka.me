@@ -23,9 +23,9 @@ const AboutPage = () => {
     <>
         <Navbar />
         <AboutContent />
-        <Education />
         <Experience />
         <Projects />
+        <Education />
         <BlogList />
         <ScrollToTopButton />
     </>

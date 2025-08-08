@@ -1,9 +1,19 @@
 export const AllExperienceData: AllExperienceDataInterface[] = [
   {
+    company: "Goldman Sachs",
+    role: "Associate Software Development Engineer",
+    start_date: "April 2025",
+    end_date: "Present",
+    description: [
+      "Part of the Client Assets Engineering Team.",
+    ],
+    url: "https://www.goldmansachs.com",
+  },
+  {
     company: "Mobile Premier League",
     role: "Software Development Engineer",
     start_date: "Oct 2022",
-    end_date: "Jul 2024",
+    end_date: "Jul 2023",
     description: [
       "Achieved a 40% reduction in infrastructure costs and utilization by implementing a library for metrics collection and auto-scaling using OpenTelemetry, enabling graceful node shutdowns and adoption multiple cross-functional teams.",
       "Boosted user engagement and retention by 70% by expanding matchmaking systems with cross-country support, enabling seamless interactions across international user bases.",
